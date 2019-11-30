@@ -1,5 +1,5 @@
- language: python
- install: 
-   - pip install gigalixir --ignore-installed six
- script:
-   - gigalixir --help
+language: python
+install: 
+  - pip install gigalixir --ignore-installed six
+script:
+  - gigalixir --help
