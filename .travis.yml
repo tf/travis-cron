@@ -3,4 +3,4 @@ install:
   - pip install gigalixir --ignore-installed six
 script:
   - echo -e "machine api.gigalixir.com\nlogin $LOGIN\n  password $PASSWORD" > ~/.netrc
-  - gigalixir ps -a "$APP"
+  - gigalixir ps:scale -a "$APP" -r 1
