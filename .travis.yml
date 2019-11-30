@@ -2,4 +2,5 @@ language: python
 install: 
   - pip install gigalixir --ignore-installed six
 script:
-  - gigalixir --help
+  - echo -e "machine api.gigalixir.com\nlogin $LOGIN\n  password $PASSWORD" > ~/.netrc
+  - gigalixir ps
